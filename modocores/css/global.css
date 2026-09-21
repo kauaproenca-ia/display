@@ -1,6 +1,7 @@
 /* Importação dos arquivos de estilos */
 @import url(./reset.css);
 @import url(./design-system.css);
+@import url(.colors-bars.css);
 
 .color-section {
     display: flex;
@@ -8,7 +9,7 @@
     width: 100%;
 }
 
-.color-section__sidebar{
+.color-section__sidebar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +19,7 @@
     border: var(--ui-border);
 }
 
-.color-section__title{
+.color-section__title {
     color: var(--ui-text-title);
     font-size: 20px;
     /* Peso da fonte: NÃO UTILIZA PX */
@@ -29,7 +30,7 @@
     letter-spacing: 0.5px;
 }
 
-.color-section__menu{
+.color-section__menu {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -37,7 +38,7 @@
     align-items: center;
 }
 
-.color-section__link{
+.color-section__link {
     color: var(--ui-text-link);
     width: 200px;
     text-decoration: none;
@@ -50,26 +51,26 @@
     transition: all 0.3s ease-in-out;
 }
 
-.color-section__link--active{
+.color-section__link--active {
     color: var(--ui-link-active-text);
     background-color: var(--ui-link-active-bg);
     /* Sombra */
     box-shadow: 0px 1px 6px rgba(244, 244, 248, 0.25);
 }
 
-.color-section__link--active :hover{
+.color-section__link--active :hover {
     /* Mudar as propriedades do elemento */
     transform: scale(1.05);
     color: var(--ui-link-active-text);
 }
 
-.color-section__link:not(.color-section__link--active):hover{
+.color-section__link:not(.color-section__link--active):hover {
 
     color: var(--ui-text-title);
     background-color: var(--ui-link-hover-bg);
 }
 
-.color-section__bar{
+.color-section__bar {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -81,68 +82,33 @@
     transition: transform 0.25s ease;
 }
 
-.color-section__bar span{
+.color-section__bar span {
     background-color: aliceblue;
     padding: 10px 12px;
     border-radius: 12px;
     visibility: hidden;
 }
 
-.color-section__bar:hover span{
+.color-section__bar:hover span {
     visibility: visible;
 }
 
-.color-section__bar:hover{
+.color-section__bar:hover {
     transform: scaleX(1.02);
-    /*  */
     z-index: 0;
     box-shadow: 0 0 30px rgba(51, 50, 50, 0.3);
 }
 
+.color-section__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
 
-/* RGB */
-.color-section__bar--rgb-1{background-color: var(--color-rgb-1);}
-
-.color-section__bar--rgb-2{background-color: var(--color-rgb-2);}
-
-.color-section__bar--rgb-3{background-color: var(--color-rgb-3);}
-
-.color-section__bar--rgb-4{background-color: var(--color-rgb-4);}
-
-.color-section__bar--rgb-5{background-color: var(--color-rgb-5);}
-
-.color-section__bar--rgb-6{background-color: var(--color-rgb-6);}
-
-
-/* CMYK */
-.color-section__bar--cmyk-1{background-color: var(--color-cmyk-1);}
-
-.color-section__bar--cmyk-2{background-color: var(--color-cmyk-2);}
-
-.color-section__bar--cmyk-3{background-color: var(--color-cmyk-3);}
-
-.color-section__bar--cmyk-4{background-color: var(--color-cmyk-4);}
-
-.color-section__bar--cmyk-5{background-color: var(--color-cmyk-5);}
-
-.color-section__bar--cmyk-6{background-color: var(--color-cmyk-6);}
-
-
-/* Netflix */
-.color-section__bar--netflix-1{background-color: var(--color-netflix-1);}
-
-.color-section__bar--netflix-2{background-color: var(--color-netflix-2);}
-
-.color-section__bar--netflix-3{background-color: var(--color-netflix-3);}
-
-.color-section__bar--netflix-4{background-color: var(--color-netflix-4);}
-
-
-/* Google */
-.color-section__bar--google-1{background-color: var(--color-google-1);}
-
-.color-section__bar--google-2{background-color: var(--color-google-2);}
-
-.color-section__bar--google-3{background-color: var(--color-google-3);}
-
-.color-section__bar--google-4{background-color: var(--color-google-4);}
+.color-section__palette {
+    display: flex;
+    height: 43vh;
+    width: 100%;
+    ;
+}

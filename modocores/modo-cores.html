@@ -4,94 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modo Cores</title>
-    
-    <!-- Link do CSS -->
-     <link rel="stylesheet" href="./css/global.css">
+
+<link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
-    <section id="rgb" class="color-section">
 
+    <!-- RGB -->
+    <secion id="rgb" class="color-section">
         <aside class="color-section__sidebar">
             <h2 class="color-section__title">Modelo RGB</h2>
             <nav class="color-section__menu">
                 <a href="#rgb" class="color-section__link color-section__link--active">RGB</a>
-                <a href="#cmyk" class="color-section__link"> CMYK </a>
-                <a href="#netflix" class="color-section__link">NETFLIX</a>
-                <a href="#google" class="color-section__link">GOOGLE</a>
+                <a href="#cmyk" class="color-section__link">CMYK</a>
+                <a href="#netflix" class="color-section__link"> Netflix</a>
+                <a href="#google" class="color-section__link">Google</a>
             </nav>
         </aside>
 
-            <div class="color-section__bar color-section__bar--rgb-1"><span><strong>RGB (255, 0, 0)</strong></span></div>
-            <div class="color-section__bar color-section__bar--rgb-2"><span><strong>RGB (0, 255, 0)</strong></span></div>
-            <div class="color-section__bar color-section__bar--rgb-3"><span><strong>RGB (0, 0, 255)</strong></span></div>
-            <div class="color-section__bar color-section__bar--rgb-4"><span><strong>RGB (255, 255, 0)</strong></span></div>
-            <div class="color-section__bar color-section__bar--rgb-5"><span><strong>RGB (0, 255, 255)</strong></span></div>
-            <div class="color-section__bar color-section__bar--rgb-6"><span><strong>RGB (255, 0, 255)</strong></span></div>
+        <div class="color-section__content">
+            <section class="color-section__palette" aria-label="Visualização da Paleta RGB">
+                <div class="color-section__bar color-section__bar--rgb-1"><p>RGB (255, 0, 0)</p></div>
+                <div class="color-section__bar color-section__bar--rgb-2"><p>RGB (0, 255, 0)</p></div>
+                <div class="color-section__bar color-section__bar--rgb-3"><p>RGB (0, 0, 255)</p></div>
+                <div class="color-section__bar color-section__bar--rgb-4"><p>RGB (255, 255, 0)</p></div>
+                <div class="color-section__bar color-section__bar--rgb-5"><p>RGB (0, 255, 255)</p></div>
+                <div class="color-section__bar color-section__bar--rgb-6"><p>RGB (255, 0, 255)</p></div>
+            </section>
 
-    </section>
+            <section class="color-section__faq" aria-labelledby="fag-rgb-title">
+                <h3 id="fag-rgb-title" class="color-section__faq-title">Perguntas Frequentes sobre RGB</h3>
+                <details class="color-section__faq-item">
+                    <summary class="color-section__faq-question">Lorem</summary>
+                    <p class="color-section__faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates,
+                         tenetur culpa, ipsa corrupti aperiam quibusdam impedit perspiciatis voluptatem harum ipsam expedita. 
+                         Odit sunt pariatur ullam, tenetur esse iste ratione.</p>
+                </details>
+                <details class="color-section__faq-item">
+                    <summary class="color-section__faq-question">Lorem</summary>
+                    <p class="color-section__faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates,
+                         tenetur culpa, ipsa corrupti aperiam quibusdam impedit perspiciatis voluptatem harum ipsam expedita. 
+                         Odit sunt pariatur ullam, tenetur esse iste ratione.</p>
+                </details>
+                <details class="color-section__faq-item">
+                    <summary class="color-section__faq-question">Lorem</summary>
+                    <p class="color-section__faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates,
+                         tenetur culpa, ipsa corrupti aperiam quibusdam impedit perspiciatis voluptatem harum ipsam expedita. 
+                         Odit sunt pariatur ullam, tenetur esse iste ratione.</p>
+                </details>
+            </section>
+        </div>
+    </secion>
 
-    <section id="cmyk" class="color-section">
 
+    <!-- CMKY -->
+    <secion id="cmyk" class="color-section">
         <aside class="color-section__sidebar">
             <h2 class="color-section__title">Modelo CMYK</h2>
             <nav class="color-section__menu">
                 <a href="#rgb" class="color-section__link">RGB</a>
                 <a href="#cmyk" class="color-section__link color-section__link--active">CMYK</a>
-                <a href="#netflix" class="color-section__link">NETFLIX</a>
-                <a href="#google" class="color-section__link">GOOGLE</a>
-
+                <a href="#netflix" class="color-section__link">Netflix</a>
+                <a href="#google" class="color-section__link">Google</a>
             </nav>
         </aside>
 
-            <div class="color-section__bar color-section__bar--cmyk-1"><span><strong>#E60000</strong></span></div>
-            <div class="color-section__bar color-section__bar--cmyk-2"><span><strong>#006B00</strong></span></div>
-            <div class="color-section__bar color-section__bar--cmyk-3"><span><strong>#0000AE</strong></span></div>
-            <div class="color-section__bar color-section__bar--cmyk-4"><span><strong>#DFDF05</strong></span></div>
-            <div class="color-section__bar color-section__bar--cmyk-5"><span><strong>#03E6E6</strong></span></div>
-            <div class="color-section__bar color-section__bar--cmyk-6"><span><strong>#D900D9</strong></span></div>
+        <div class="color-section__bar color-section__bar--cmyk-1"><p>CMKY (#e60000)</p></div>
+        <div class="color-section__bar color-section__bar--cmyk-2"><p>CMKY (#006b00)</p></div>
+        <div class="color-section__bar color-section__bar--cmyk-3"><p>CMKY (#0000ae)</p></div>
+        <div class="color-section__bar color-section__bar--cmyk-4"><p>CMKY (#dfdf05)</p></div>
+        <div class="color-section__bar color-section__bar--cmyk-5"><p>CMKY (#03e6e6)</p></div>
+        <div class="color-section__bar color-section__bar--cmyk-6"><p>CMKY (#d900d9)</p></div>
+    </secion>
 
-    </section>
-
-    <section id="netflix" class="color-section">
-
+    <!-- Netflix -->
+    <secion id="netflix" class="color-section">
         <aside class="color-section__sidebar">
-            <h2 class="color-section__title">Modelo Netflix</h2>
+            <h2 class="color-section__title">Modelo NETFLIX</h2>
             <nav class="color-section__menu">
                 <a href="#rgb" class="color-section__link">RGB</a>
                 <a href="#cmyk" class="color-section__link">CMYK</a>
-                <a href="#netflix" class="color-section__link color-section__link--active">NETFLIX</a>
-                <a href="#google" class="color-section__link">GOOGLE</a>
-
+                <a href="#netflix" class="color-section__link  color-section__link--active">Netflix</a>
+                <a href="#google" class="color-section__link">Google</a>
             </nav>
         </aside>
 
-            <div class="color-section__bar color-section__bar--netflix-1"><span><strong>#E50914</strong></span></div>
-            <div class="color-section__bar color-section__bar--netflix-2"><span><strong>#B81D24</strong></span></div>
-            <div class="color-section__bar color-section__bar--netflix-3"><span><strong>#221F1F</strong></span></div>
-            <div class="color-section__bar color-section__bar--netflix-4"><span><strong>#F5F5F1</strong></span></div>
+        <div class="color-section__bar color-section__bar--netflix-1"><p>Netflix (#b1060f)</p></div>
+        <div class="color-section__bar color-section__bar--netflix-2"><p>Netflix (#e50914)</p></div>
+        <div class="color-section__bar color-section__bar--netflix-3"><p>Netflix (#000000)</p></div>
+    </secion>
 
-
-    </section>
-
-    <section id="google" class="color-section">
-
+    <!-- Google -->
+    <secion id="google" class="color-section">
         <aside class="color-section__sidebar">
-            <h2 class="color-section__title">Modelo Google</h2>
+            <h2 class="color-section__title">Modelo GOOGLE</h2>
             <nav class="color-section__menu">
                 <a href="#rgb" class="color-section__link">RGB</a>
                 <a href="#cmyk" class="color-section__link">CMYK</a>
-                <a href="#netflix" class="color-section__link">NETFLIX</a>
-                <a href="#google" class="color-section__link color-section__link--active">GOOGLE</a>
+                <a href="#netflix" class="color-section__link">Netflix</a>
+                <a href="#google" class="color-section__link  color-section__link--active">Google</a>
             </nav>
         </aside>
 
-            <div class="color-section__bar color-section__bar--google-1"><span><strong>#4285F4</strong></span></div>
-            <div class="color-section__bar color-section__bar--google-2"><span><strong>#FBBC05</strong></span></div>
-            <div class="color-section__bar color-section__bar--google-3"><span><strong>#34A853</strong></span></div>
-            <div class="color-section__bar color-section__bar--google-4"><span><strong>#EA4335</strong></span></div>
-
-
-    </section>
+        <div class="color-section__bar color-section__bar--google-1"><p>Google (#db4437)</p></div>
+        <div class="color-section__bar color-section__bar--google-2"><p>Google (#f4b400)</p></div>
+        <div class="color-section__bar color-section__bar--google-3"><p>Google (#0f9d58)</p></div>
+        <div class="color-section__bar color-section__bar--google-4"><p>Google (#4285f4)</p></div>
+    </secion>
 
 </body>
 </html>
