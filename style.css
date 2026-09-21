@@ -104,11 +104,29 @@ html{
 }
 
 .link-lista{
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-size: medium;
     line-height: 20px;
 
+}
+
+.sumario details{
+    border: 2px solid #ff0000;
+    width: 50%;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.sumario summary{
+    background: #2c2c2c;
+    color: white;
+    height: 40px;
+}
+
+.sumario p{
+    color: white;
+    background: #25ba32;
+    line-height: 40px;
 }
 
 /*
