@@ -1,27 +1,30 @@
-/* Importação dos arquivos de estilos */
 @import url(./reset.css);
 @import url(./design-system.css);
-@import url(.colors-bars.css);
+@import url(./color-bars.css);
 
-.color-section {
+
+
+
+
+.color-section{
     display: flex;
     height: 100vh;
     width: 100%;
 }
 
-.color-section__sidebar {
+.color-section__sidebar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 260px;
     background-color: var(--ui-bg-sidebar);
     padding: 30px 20px;
-    border: var(--ui-border);
+    align-items: center;
 }
 
-.color-section__title {
+.color-section__title{
     color: var(--ui-text-title);
-    font-size: 20px;
+    font-size: 24px;
     /* Peso da fonte: NÃO UTILIZA PX */
     font-weight: 700;
     margin-bottom: 35px;
@@ -30,90 +33,132 @@
     letter-spacing: 0.5px;
 }
 
-.color-section__menu {
+.color-section__menu{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    
 }
-
-.color-section__link {
+/* Elemento Link: Estilo base dos botões de navegação */
+.color-section__link{
     color: var(--ui-text-link);
-    width: 200px;
     text-decoration: none;
-    font-size: 14px;
-    /* Peso da fonte (não usar px) */
+    font-size: 18px;
+    /* Peso sa fonte (não usar px) */
     font-weight: 600;
-    padding: 12px 16px;
+    padding: 12px 90px;
     border-radius: 6px;
     text-align: center;
+    /* Efeito no momento em que o mouse é posicionado */
     transition: all 0.3s ease-in-out;
 }
 
-.color-section__link--active {
+.color-section__link--active{
     color: var(--ui-link-active-text);
     background-color: var(--ui-link-active-bg);
-    /* Sombra */
-    box-shadow: 0px 1px 6px rgba(244, 244, 248, 0.25);
-}
+    box-shadow: 0px 2px 5px rgba(244, 244, 248, 0.25);}
 
-.color-section__link--active :hover {
-    /* Mudar as propriedades do elemento */
-    transform: scale(1.05);
+.color-section__link--active:hover{
     color: var(--ui-link-active-text);
-}
+    transform: scale(1.05);}
 
-.color-section__link:not(.color-section__link--active):hover {
-
+.color-section__link:not(.color-section__link--active):hover{
     color: var(--ui-text-title);
     background-color: var(--ui-link-hover-bg);
 }
-
-.color-section__bar {
+.color-section__bar{
     display: flex;
-    justify-content: center;
     align-items: end;
-    /* Faz com que as 6 colunas dividam igualmente entre o espaço restante */
+    justify-content: center;
     flex-grow: 1;
     height: 100%;
-
-    /* Efeito de transição suave */
     transition: transform 0.25s ease;
 }
 
-.color-section__bar span {
+.color-section__bar p{
     background-color: aliceblue;
     padding: 10px 12px;
     border-radius: 12px;
     visibility: hidden;
 }
 
-.color-section__bar:hover span {
+.color-section__bar:hover p{
     visibility: visible;
 }
 
-.color-section__bar:hover {
+.color-section__bar:hover{
     transform: scaleX(1.02);
-    z-index: 0;
+    z-index: 10;
     box-shadow: 0 0 30px rgba(51, 50, 50, 0.3);
 }
 
-.color-section__content {
+.color-section__content{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100vh;
 }
 
-.color-section__palette {
+.color-section__palette{
     display: flex;
     height: 43vh;
     width: 100%;
-    ;
 }
 
 .color-section__faq{
     flex-grow: 1;
-    background-color: var();
+    background-color: var(--faq-bg);
+    padding: 35px 40px;
+    border-top: 1px solid var(--ui-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.color-section__faq-title{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--faq-text-title);
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.color-section__faq-item{
+    background-color: var(--faq-card-bg);
+    border: 1px solid var(--faq-border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.color-section__faq-item:hover,
+.color-section__faq-item[open]{
+    background-color: var(--faq-card-hover-bg);
+    border-color: var(--faq-border-neon);
+    box-shadow: 0 0 8px var(--faq-border-neon), 0 0 20px rgba(157, 38, 239, 0.3);
+    transform: translateY(-2px);
+}
+
+.color-section__faq-question{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--faq-text-question);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.color-section__faq-question::webkit-details-marker{
+    display: none;
+}
+.color-section__faq-question::after{
+    content: "✦";
+    font-size: 16px;
+    color: var(--faq-border-neon-glow);
+    transition: transform 0.3 ease, color 0.3s ease;
 }
