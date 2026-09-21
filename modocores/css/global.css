@@ -112,3 +112,8 @@
     width: 100%;
     ;
 }
+
+.color-section__faq{
+    flex-grow: 1;
+    background-color: var();
+}
