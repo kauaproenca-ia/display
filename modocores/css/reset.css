@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family:Helvetica, sans-serif;
 }
 
 html{
-    /* Ativa a rolagem suave nativa para links e âncoras */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
