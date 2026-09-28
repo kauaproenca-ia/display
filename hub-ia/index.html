@@ -7,38 +7,64 @@
     <link rel="stylesheet" href="./css/reset.css">
     <style>
         /* Base style for mobile devices */
-        body {
+        body{
+        padding: 0;
         background-color: olive;
         color: white;
-        }
+        font-family: Arial, sans-serif;
+    }
+
+        h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .container{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+    }
+
+        .box{
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            background-color: black;
+    }
 
         /* For devices with a minimum width of 768px (Medium) */
         @media (min-width: 768px) {
-        body {
+            body {
             background-color: blue;
             color: white;
         }
+            .box{
+                max-width: 350px;
+            }
         }
 
         /* For devices with a minimum width of 992px (Large) */
         @media (min-width: 992px) {
-        body {
+            body {
             background-color: tan;
             color: black;
         }
+            .box {
+                max-width: 450px;
+            }
         }
+
     </style>
 </head>
 
 <body>
     <h1>Este é um teste de @media</h1>
     <section class="container">
-        <div class="container">
-            <box></box>
-            <box></box>
-            <box></box>
-            <box></box>
-        </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
     </section>
 </body>
 </html>
