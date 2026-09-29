@@ -1,139 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de @media</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <style>
-        /* Base style for mobile devices */
-        body{
-
-        padding: 0;
-        background-color: olive;
-        color: white;
-        font-family: Arial, sans-serif;
-        height: 300vh;
-    }
-
-        h1{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-        .container{
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-    }
-
-        .box{
-            width: 100%;
-            max-width: 400px;
-            height: 200px;
-            background-color: black;
-    }
-
-        .container-position{
-            margin-top: 15px;
-            width: 100%;
-            height: 600px;
-            border: 2px solid red;
-            position: relative;
-        }
-
-        .filho-tamanho{
-            position: absolute;
-            /* margin-top: 10px; */
-            width: 200px;
-            height: 200px;
-            background-color: violet;
-        }
-
-        .filho01__container-position{
-            top: 0;
-            left: 0;
-        }
-
-        .filho02__container-position{
-            top: 0;
-            right: 0;
-        }
-
-        .filho03__container-position{
-            bottom: 0;
-            left: 0;
-        }
-
-        .filho04__container-position{
-            bottom: 0;
-            right: 0;
-        }
-
-        .whats{
-            width: 75px;
-            height: 75px;
-            background-color: #1ad302;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            position: fixed;
-            bottom: 100px;
-            right: 60px;
-            content: ;
-        }
-
-        .whats img{
-            width: 100%;
-            height: 100%;
-        }
-
-        /* For devices with a minimum width of 768px (Medium) */
-        @media (min-width: 768px) {
-            body {
-            background-color: blue;
-            color: white;
-        }
-            .box{
-                max-width: 350px;
-            }
-        }
-
-        /* For devices with a minimum width of 992px (Large) */
-        @media (min-width: 992px) {
-            body {
-            background-color: tan;
-            color: black;
-        }
-            .box {
-                max-width: 450px;
-            }
-        }
-
-    </style>
+    <title>HubIA - Inteligência Artificial</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
-    <h1>Este é um teste de @media</h1>
-    <div class="container">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-    </div>
+    <header class="header">
+        <div class="header__brand">
+            <h1 class="header__title">Hub<mark>IA</mark></h1>
+        </div>
 
-    <div class="container-position">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#vision" class="nav__link">Visão Computacional</a></li>
+                <li class="nav__item"><a href="#nlp" class="nav__link">PLN</a></li>
+                <li class="nav__item"><a href="#generative" class="nav__link">IA Generativa</a></li>
+                <li class="nav__item"><a href="#predective" class="nav__link">IA Preditiva</a></li>
+                <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="vision" class="section-ia">
+            <div class="section-ia__container">
+                <article class="section-ia__content">
+                    <h2 class="section-ia__title">1. Visão Computacional</h2>
+                    <p class="section-ia__text">A Visão Computacional permite que os sistemas <strong>
+                            extraiam informações
+                            estruturadas de imagens e vídeos
+                        </strong>. O modelo identifica objetos, padrões biométricos e
+                        falhas industriais em tempo real com alta precisão. </p>
+                    <p class="section-ia__text"><em>Exemplo de aplicação:</em> Diagnóstico médico automatizado
+                        analisando
+                        radiografias para
+                        identificar anomalias precocemente. </p>
+                </article>
+                <aside class="section-ia__aside">
+                    <div class="card-image">
+                        <img src="https://placehold.co/500x300/e2e8f0/0284c7?text=Visao+Computacional+500x300"
+                            alt="Exemplo de Visão Computacional" class="card-image__img">
+                    </div>
+                </aside>
+            </div>
 
-        <div class="filho01__container-position filho-tamanho"></div>
-        <div class="filho02__container-position filho-tamanho"></div>
-        <div class="filho03__container-position filho-tamanho"></div>
-        <div class="filho04__container-position filho-tamanho"></div>
+        </section>
 
-    </div>
+        <section id="nlp" class="section-ia section-ia--reverse">
+            <div class="section-ia__container">
+                <article class="section-ia__content">
+                    <h2 class="section-ia__title">2. Processamento de Linguagem Natural</h2>
+                    <p class="section-ia__text">Sistemas de PLN capacitam máquinas a compreender, interpretar e gerar
+                        linguagem humana. Através da análise contextual, a IA capta intenções e sentimentos nas
+                        conversas.</p>
+                    <p class="section-ia__text"><em>Exemplo de aplicação:</em> Atendimento ao cliente via assistentes
+                        virtuais capazes de
+                        resolver problemas complexos com respostas fluidas.</p>
+                </article>
+                <aside class="section-ia__aside">
+                    <div class="card-image">
+                        <img src="https://placehold.co/500x300/e2e8f0/0d9488?text=PLN+Linguagem+500x300"
+                            alt="Exemplo de Visão Computacional" class="card-image__img">
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-    <div class="whats">
-        <img src="./img/whatsapp.png" alt="Logo Whatsapp">
-    </div>
+        <section id="generative" class="section-ia">
+
+        </section>
+        <section id="predictive" class="section-ia section-ia--reverse">
+
+        </section>
+        <section id="faq" class="faq">
+
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
 </body>
+
 </html>
